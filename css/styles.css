@@ -26,7 +26,8 @@ html {
 }
 
 *:hover,
-:focus {
+*:focus {
+    color: var(--blue-text-color);
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -525,12 +526,16 @@ ul {
     margin-bottom: 20px;
 }
 
-.logo-bottom .whitetext {
+.whitetext {
     color: var(--primary-white-color);
 }
 
-.logo-bottom .whitetext:focus {
-    color: var(--focus-color);
+.whitetext:focus {
+    color: var(--blue-text-color);
+}
+
+.whitetext:hover {
+    color: var(--blue-text-color);
 }
 
 .address {}
@@ -599,9 +604,10 @@ ul {
     background-color: var(--blue-text-color);
 }
 
-.whitetext:hover {
+
+/* .whitetext:hover {
     color: var(--blue-text-color);
-}
+} */
 
 .footer-icon-image {}
 
